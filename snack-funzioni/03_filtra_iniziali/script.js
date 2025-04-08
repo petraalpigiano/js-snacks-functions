@@ -1,7 +1,7 @@
 /* Scrivi una funzione che accetti un'array di stringhe e una lettera e restituisca un array contenente solo le parole che iniziano con quella lettera */
 
 const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
-const onlyLetterName = [];
+
 // Dichiara la funzione qui.
 /**
  *
@@ -10,6 +10,7 @@ const onlyLetterName = [];
  * @returns {Array} nuovo array con parole che iniziano con quella lettera
  */
 function ListNames(listNames, letter) {
+  const onlyLetterName = [];
   for (let i = 0; i < listNames.length; i++) {
     const currentName = listNames[i];
     if (currentName[0] === letter) {
@@ -24,8 +25,6 @@ console.log(ListNames(names, "A"));
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
 
 // ESPERIMENTO DI USARE UNA FUNZIONE COME PARAMETRO DI UN ALTRA
-// const firstLetterName = [];
-// const letterName = [];
 
 // Funzione che prende le iniziali delle parole
 // /**
@@ -34,6 +33,7 @@ console.log(ListNames(names, "A"));
 //  * @returns {Array} nuovo array con iniziali dei nomi dell'altro array
 //  */
 // function ListNames(listNames) {
+// const firstLetterName = [];
 //   for (let i = 0; i < listNames.length; i++) {
 //     const currentName = listNames[i];
 //     firstLetterName.push(currentName[0]);
@@ -50,6 +50,7 @@ console.log(ListNames(names, "A"));
 //  */
 // function ListNames2(listNames, letter) {
 //     for (let i = 0; i < listNames.length; i++) {
+// const letterName = [];
 //       const currentName = listNames[i];
 //       if (currentName === letter) {
 //         letterName.push(currentName);

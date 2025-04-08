@@ -1,7 +1,7 @@
 /* Scrivi una funzione che accetti un array di nomi e restituisca di nuovo un array con le iniziali di ogni parola dell'array fornito */
 
 const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
-const firstLetterName = [];
+
 // Dichiara la funzione qui.
 
 /**
@@ -10,6 +10,7 @@ const firstLetterName = [];
  * @returns {Array} nuovo array con iniziali dei nomi dell'altro array
  */
 function ListNames(listNames) {
+  const firstLetterName = [];
   for (let i = 0; i < listNames.length; i++) {
     const currentName = listNames[i];
     firstLetterName.push(currentName[0]);
