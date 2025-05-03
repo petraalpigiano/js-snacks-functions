@@ -17,3 +17,7 @@ function stringPlusName(name) {
 console.log(stringPlusName(userName));
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
+
+// Arrow function
+const stringPlusName2 = (name) => "Ciao" + " " + name;
+console.log(stringPlusName2(userName));

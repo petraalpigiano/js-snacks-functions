@@ -19,7 +19,7 @@ function wordVowels(chosenWord) {
       currentChar === "o" ||
       currentChar === "u"
     ) {
-      howManyVowels += 1;
+      `${(howManyVowels += 1)} ${console.log(currentChar[i])}`;
     }
   }
 
