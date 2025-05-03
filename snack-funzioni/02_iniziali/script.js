@@ -22,3 +22,18 @@ function ListNames(listNames) {
 console.log(ListNames(names));
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
+
+// With forEach
+/**
+ *
+ * @param {Array} listNames lista di nomi
+ * @returns {Array} nuovo array con iniziali dei nomi dell'altro array
+ */
+function ListNames2(listNames) {
+  const firstLetterName = [];
+  listNames.forEach(function (currentName) {
+    firstLetterName.push(currentName[0]);
+  });
+  return firstLetterName;
+}
+console.log(ListNames2(names));
